@@ -1,0 +1,836 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(ProjectDir)..\..\..\UnityCommon.props" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2ffee64f-9907-4b2c-a0c1-1446f8405be7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AssemblyCSharpWSA</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.16299.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <BaseIntermediateOutputPath>obj\x86\Debug\</BaseIntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE;ENABLE_PROFILER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_0;UNITY_2017_3;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <BaseIntermediateOutputPath>obj\x86\Release\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;ENABLE_PROFILER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_0;UNITY_2017_3;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Master|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Master\</OutputPath>
+    <BaseIntermediateOutputPath>obj\x86\Master\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_0;UNITY_2017_3;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <BaseIntermediateOutputPath>obj\x64\Debug\</BaseIntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE;ENABLE_PROFILER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_0;UNITY_2017_3;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <BaseIntermediateOutputPath>obj\x64\Release\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;ENABLE_PROFILER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_0;UNITY_2017_3;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Master|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x64\Master\</OutputPath>
+    <BaseIntermediateOutputPath>obj\x64\Master\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_0;UNITY_2017_3;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <BaseIntermediateOutputPath>obj\ARM\Debug\</BaseIntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE;ENABLE_PROFILER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_0;UNITY_2017_3;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <BaseIntermediateOutputPath>obj\ARM\Release\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;ENABLE_PROFILER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_0;UNITY_2017_3;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Master|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\ARM\Master\</OutputPath>
+    <BaseIntermediateOutputPath>obj\ARM\Master\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_0;UNITY_2017_3;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;UNITY_WSA;ENABLE_DOTNET;UNITY_WINRT_10_0;NETFX_CORE;ENABLE_WINMD_SUPPORT;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.TilemapModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UIElementsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.SpriteShapeModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.SpriteMaskModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.SharedInternalsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.TerrainModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.StyleSheetsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.VRModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.VideoModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.VehiclesModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WinRTLegacy">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\WinRTLegacy.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.WindModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.WebModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.WebModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UnityConnectModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UNETModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.ClothModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.AudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.DirectorModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.CrashReportingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.AccessibilityModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.ARModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.AnimationModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.AIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.ParticlesLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Physics2DModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.GridModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.GameCenterModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.InputModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Timeline.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\nunit.framework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.HoloLens.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.StandardEvents.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Networking.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <SDKReference Include="WindowsDesktop, Version=10.0.16299.0"/>
+    <SDKReference Include="WindowsIoT, Version=10.0.16299.0"/>
+    <SDKReference Include="WindowsMobile, Version=10.0.16299.0"/>
+    <SDKReference Include="WindowsTeam, Version=10.0.16299.0"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(UnityProjectDir)Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs">
+      <Link>JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs">
+      <Link>JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs">
+      <Link>JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs">
+      <Link>JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RotateCamera.cs">
+      <Link>JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RotateCamera.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_Translate.cs">
+      <Link>JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_Translate.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs">
+      <Link>JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs">
+      <Link>JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs">
+      <Link>JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs">
+      <Link>JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs">
+      <Link>NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs">
+      <Link>NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs">
+      <Link>NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIEquipmentSlot.cs">
+      <Link>NGUI\Examples\Scripts\InventorySystem\Game\UIEquipmentSlot.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIItemSlot.cs">
+      <Link>NGUI\Examples\Scripts\InventorySystem\Game\UIItemSlot.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIItemStorage.cs">
+      <Link>NGUI\Examples\Scripts\InventorySystem\Game\UIItemStorage.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIStorageSlot.cs">
+      <Link>NGUI\Examples\Scripts\InventorySystem\Game\UIStorageSlot.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\InventorySystem\System\InvAttachmentPoint.cs">
+      <Link>NGUI\Examples\Scripts\InventorySystem\System\InvAttachmentPoint.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\InventorySystem\System\InvBaseItem.cs">
+      <Link>NGUI\Examples\Scripts\InventorySystem\System\InvBaseItem.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\InventorySystem\System\InvDatabase.cs">
+      <Link>NGUI\Examples\Scripts\InventorySystem\System\InvDatabase.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\InventorySystem\System\InvEquipment.cs">
+      <Link>NGUI\Examples\Scripts\InventorySystem\System\InvEquipment.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\InventorySystem\System\InvGameItem.cs">
+      <Link>NGUI\Examples\Scripts\InventorySystem\System\InvGameItem.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\InventorySystem\System\InvStat.cs">
+      <Link>NGUI\Examples\Scripts\InventorySystem\System\InvStat.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\ChatInput.cs">
+      <Link>NGUI\Examples\Scripts\Other\ChatInput.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\DownloadTexture.cs">
+      <Link>NGUI\Examples\Scripts\Other\DownloadTexture.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\ExampleDragDropItem.cs">
+      <Link>NGUI\Examples\Scripts\Other\ExampleDragDropItem.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\ExampleDragDropSurface.cs">
+      <Link>NGUI\Examples\Scripts\Other\ExampleDragDropSurface.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\LagPosition.cs">
+      <Link>NGUI\Examples\Scripts\Other\LagPosition.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\LagRotation.cs">
+      <Link>NGUI\Examples\Scripts\Other\LagRotation.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\LoadLevelOnClick.cs">
+      <Link>NGUI\Examples\Scripts\Other\LoadLevelOnClick.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\LookAtTarget.cs">
+      <Link>NGUI\Examples\Scripts\Other\LookAtTarget.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\OpenURLOnClick.cs">
+      <Link>NGUI\Examples\Scripts\Other\OpenURLOnClick.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\PanWithMouse.cs">
+      <Link>NGUI\Examples\Scripts\Other\PanWithMouse.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\PlayIdleAnimations.cs">
+      <Link>NGUI\Examples\Scripts\Other\PlayIdleAnimations.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\SetColorPickerColor.cs">
+      <Link>NGUI\Examples\Scripts\Other\SetColorPickerColor.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\Spin.cs">
+      <Link>NGUI\Examples\Scripts\Other\Spin.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\SpinWithMouse.cs">
+      <Link>NGUI\Examples\Scripts\Other\SpinWithMouse.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\Tutorial5.cs">
+      <Link>NGUI\Examples\Scripts\Other\Tutorial5.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\UISliderColors.cs">
+      <Link>NGUI\Examples\Scripts\Other\UISliderColors.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\WindowAutoYaw.cs">
+      <Link>NGUI\Examples\Scripts\Other\WindowAutoYaw.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Examples\Scripts\Other\WindowDragTilt.cs">
+      <Link>NGUI\Examples\Scripts\Other\WindowDragTilt.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\EnvelopContent.cs">
+      <Link>NGUI\Scripts\Interaction\EnvelopContent.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\LanguageSelection.cs">
+      <Link>NGUI\Scripts\Interaction\LanguageSelection.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\TypewriterEffect.cs">
+      <Link>NGUI\Scripts\Interaction\TypewriterEffect.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIButton.cs">
+      <Link>NGUI\Scripts\Interaction\UIButton.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIButtonActivate.cs">
+      <Link>NGUI\Scripts\Interaction\UIButtonActivate.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIButtonColor.cs">
+      <Link>NGUI\Scripts\Interaction\UIButtonColor.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIButtonKeys.cs">
+      <Link>NGUI\Scripts\Interaction\UIButtonKeys.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIButtonMessage.cs">
+      <Link>NGUI\Scripts\Interaction\UIButtonMessage.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIButtonOffset.cs">
+      <Link>NGUI\Scripts\Interaction\UIButtonOffset.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIButtonRotation.cs">
+      <Link>NGUI\Scripts\Interaction\UIButtonRotation.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIButtonScale.cs">
+      <Link>NGUI\Scripts\Interaction\UIButtonScale.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UICenterOnChild.cs">
+      <Link>NGUI\Scripts\Interaction\UICenterOnChild.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UICenterOnClick.cs">
+      <Link>NGUI\Scripts\Interaction\UICenterOnClick.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIDragCamera.cs">
+      <Link>NGUI\Scripts\Interaction\UIDragCamera.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIDragDropContainer.cs">
+      <Link>NGUI\Scripts\Interaction\UIDragDropContainer.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIDragDropItem.cs">
+      <Link>NGUI\Scripts\Interaction\UIDragDropItem.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIDragDropRoot.cs">
+      <Link>NGUI\Scripts\Interaction\UIDragDropRoot.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIDraggableCamera.cs">
+      <Link>NGUI\Scripts\Interaction\UIDraggableCamera.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIDragObject.cs">
+      <Link>NGUI\Scripts\Interaction\UIDragObject.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIDragResize.cs">
+      <Link>NGUI\Scripts\Interaction\UIDragResize.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIDragScrollView.cs">
+      <Link>NGUI\Scripts\Interaction\UIDragScrollView.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIEventTrigger.cs">
+      <Link>NGUI\Scripts\Interaction\UIEventTrigger.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIForwardEvents.cs">
+      <Link>NGUI\Scripts\Interaction\UIForwardEvents.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIGrid.cs">
+      <Link>NGUI\Scripts\Interaction\UIGrid.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIImageButton.cs">
+      <Link>NGUI\Scripts\Interaction\UIImageButton.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIKeyBinding.cs">
+      <Link>NGUI\Scripts\Interaction\UIKeyBinding.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIKeyNavigation.cs">
+      <Link>NGUI\Scripts\Interaction\UIKeyNavigation.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIPlayAnimation.cs">
+      <Link>NGUI\Scripts\Interaction\UIPlayAnimation.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIPlaySound.cs">
+      <Link>NGUI\Scripts\Interaction\UIPlaySound.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIPlayTween.cs">
+      <Link>NGUI\Scripts\Interaction\UIPlayTween.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIPopupList.cs">
+      <Link>NGUI\Scripts\Interaction\UIPopupList.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIProgressBar.cs">
+      <Link>NGUI\Scripts\Interaction\UIProgressBar.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UISavedOption.cs">
+      <Link>NGUI\Scripts\Interaction\UISavedOption.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIScrollBar.cs">
+      <Link>NGUI\Scripts\Interaction\UIScrollBar.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIScrollView.cs">
+      <Link>NGUI\Scripts\Interaction\UIScrollView.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIShowControlScheme.cs">
+      <Link>NGUI\Scripts\Interaction\UIShowControlScheme.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UISlider.cs">
+      <Link>NGUI\Scripts\Interaction\UISlider.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UISoundVolume.cs">
+      <Link>NGUI\Scripts\Interaction\UISoundVolume.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UITable.cs">
+      <Link>NGUI\Scripts\Interaction\UITable.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIToggle.cs">
+      <Link>NGUI\Scripts\Interaction\UIToggle.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIToggledComponents.cs">
+      <Link>NGUI\Scripts\Interaction\UIToggledComponents.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIToggledObjects.cs">
+      <Link>NGUI\Scripts\Interaction\UIToggledObjects.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIWidgetContainer.cs">
+      <Link>NGUI\Scripts\Interaction\UIWidgetContainer.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Interaction\UIWrapContent.cs">
+      <Link>NGUI\Scripts\Interaction\UIWrapContent.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\ActiveAnimation.cs">
+      <Link>NGUI\Scripts\Internal\ActiveAnimation.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\AnimationOrTween.cs">
+      <Link>NGUI\Scripts\Internal\AnimationOrTween.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\BetterList.cs">
+      <Link>NGUI\Scripts\Internal\BetterList.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\BMFont.cs">
+      <Link>NGUI\Scripts\Internal\BMFont.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\BMGlyph.cs">
+      <Link>NGUI\Scripts\Internal\BMGlyph.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\BMSymbol.cs">
+      <Link>NGUI\Scripts\Internal\BMSymbol.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\ByteReader.cs">
+      <Link>NGUI\Scripts\Internal\ByteReader.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\EventDelegate.cs">
+      <Link>NGUI\Scripts\Internal\EventDelegate.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\Localization.cs">
+      <Link>NGUI\Scripts\Internal\Localization.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\NGUIDebug.cs">
+      <Link>NGUI\Scripts\Internal\NGUIDebug.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\NGUIMath.cs">
+      <Link>NGUI\Scripts\Internal\NGUIMath.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\NGUIText.cs">
+      <Link>NGUI\Scripts\Internal\NGUIText.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\NGUITools.cs">
+      <Link>NGUI\Scripts\Internal\NGUITools.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\PropertyBinding.cs">
+      <Link>NGUI\Scripts\Internal\PropertyBinding.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\PropertyReference.cs">
+      <Link>NGUI\Scripts\Internal\PropertyReference.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\RealTime.cs">
+      <Link>NGUI\Scripts\Internal\RealTime.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\SpringPanel.cs">
+      <Link>NGUI\Scripts\Internal\SpringPanel.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\UIBasicSprite.cs">
+      <Link>NGUI\Scripts\Internal\UIBasicSprite.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\UIDrawCall.cs">
+      <Link>NGUI\Scripts\Internal\UIDrawCall.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\UIEventListener.cs">
+      <Link>NGUI\Scripts\Internal\UIEventListener.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\UIGeometry.cs">
+      <Link>NGUI\Scripts\Internal\UIGeometry.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\UIRect.cs">
+      <Link>NGUI\Scripts\Internal\UIRect.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\UISnapshotPoint.cs">
+      <Link>NGUI\Scripts\Internal\UISnapshotPoint.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Internal\UIWidget.cs">
+      <Link>NGUI\Scripts\Internal\UIWidget.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Tweening\AnimatedAlpha.cs">
+      <Link>NGUI\Scripts\Tweening\AnimatedAlpha.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Tweening\AnimatedColor.cs">
+      <Link>NGUI\Scripts\Tweening\AnimatedColor.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Tweening\AnimatedWidget.cs">
+      <Link>NGUI\Scripts\Tweening\AnimatedWidget.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Tweening\SpringPosition.cs">
+      <Link>NGUI\Scripts\Tweening\SpringPosition.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Tweening\TweenAlpha.cs">
+      <Link>NGUI\Scripts\Tweening\TweenAlpha.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Tweening\TweenColor.cs">
+      <Link>NGUI\Scripts\Tweening\TweenColor.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Tweening\TweenFill.cs">
+      <Link>NGUI\Scripts\Tweening\TweenFill.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Tweening\TweenFOV.cs">
+      <Link>NGUI\Scripts\Tweening\TweenFOV.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Tweening\TweenHeight.cs">
+      <Link>NGUI\Scripts\Tweening\TweenHeight.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Tweening\TweenOrthoSize.cs">
+      <Link>NGUI\Scripts\Tweening\TweenOrthoSize.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Tweening\TweenPosition.cs">
+      <Link>NGUI\Scripts\Tweening\TweenPosition.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Tweening\TweenRotation.cs">
+      <Link>NGUI\Scripts\Tweening\TweenRotation.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Tweening\TweenScale.cs">
+      <Link>NGUI\Scripts\Tweening\TweenScale.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Tweening\TweenTransform.cs">
+      <Link>NGUI\Scripts\Tweening\TweenTransform.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Tweening\TweenVolume.cs">
+      <Link>NGUI\Scripts\Tweening\TweenVolume.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Tweening\TweenWidth.cs">
+      <Link>NGUI\Scripts\Tweening\TweenWidth.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\Tweening\UITweener.cs">
+      <Link>NGUI\Scripts\Tweening\UITweener.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UI2DSprite.cs">
+      <Link>NGUI\Scripts\UI\UI2DSprite.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UI2DSpriteAnimation.cs">
+      <Link>NGUI\Scripts\UI\UI2DSpriteAnimation.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UIAnchor.cs">
+      <Link>NGUI\Scripts\UI\UIAnchor.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UIAtlas.cs">
+      <Link>NGUI\Scripts\UI\UIAtlas.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UICamera.cs">
+      <Link>NGUI\Scripts\UI\UICamera.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UIColorPicker.cs">
+      <Link>NGUI\Scripts\UI\UIColorPicker.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UIFont.cs">
+      <Link>NGUI\Scripts\UI\UIFont.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UIInput.cs">
+      <Link>NGUI\Scripts\UI\UIInput.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UIInputOnGUI.cs">
+      <Link>NGUI\Scripts\UI\UIInputOnGUI.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UILabel.cs">
+      <Link>NGUI\Scripts\UI\UILabel.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UILocalize.cs">
+      <Link>NGUI\Scripts\UI\UILocalize.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UIOrthoCamera.cs">
+      <Link>NGUI\Scripts\UI\UIOrthoCamera.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UIPanel.cs">
+      <Link>NGUI\Scripts\UI\UIPanel.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UIRoot.cs">
+      <Link>NGUI\Scripts\UI\UIRoot.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UISprite.cs">
+      <Link>NGUI\Scripts\UI\UISprite.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UISpriteAnimation.cs">
+      <Link>NGUI\Scripts\UI\UISpriteAnimation.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UISpriteData.cs">
+      <Link>NGUI\Scripts\UI\UISpriteData.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UIStretch.cs">
+      <Link>NGUI\Scripts\UI\UIStretch.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UITextList.cs">
+      <Link>NGUI\Scripts\UI\UITextList.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UITexture.cs">
+      <Link>NGUI\Scripts\UI\UITexture.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UITooltip.cs">
+      <Link>NGUI\Scripts\UI\UITooltip.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\NGUI\Scripts\UI\UIViewport.cs">
+      <Link>NGUI\Scripts\UI\UIViewport.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Script\Gesture.cs">
+      <Link>Script\Gesture.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Script\Listener.cs">
+      <Link>Script\Listener.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Script\MagicControl.cs">
+      <Link>Script\MagicControl.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Script\MagicTest.cs">
+      <Link>Script\MagicTest.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Script\MovController.cs">
+      <Link>Script\MovController.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+    <PropertyGroup>
+    <TargetsTriggeredByCompilation>$(TargetsTriggeredByCompilation);RunSerializationWeaver</TargetsTriggeredByCompilation>
+  </PropertyGroup>
+  <Target Name="RunSerializationWeaver" Condition="'$(BuildingProject)' == 'true'">
+    <Message Importance="high" Text="Running SerializationWeaver..." />
+    <Move SourceFiles="@(IntermediateAssembly)" DestinationFolder="$(TargetDir)Unprocessed" OverwriteReadOnlyFiles="true" />
+    <Move SourceFiles="@(IntermediateAssembly-&gt;'%(RelativeDir)%(Filename).pdb')" DestinationFolder="$(TargetDir)Unprocessed" Condition="Exists('@(IntermediateAssembly-&gt;'%(RelativeDir)%(Filename).pdb')')" OverwriteReadOnlyFiles="true" />
+    <Exec Command="&quot;$(UnityWSAToolsDir)SerializationWeaver\SerializationWeaver.exe&quot; &quot;$(TargetDir)Unprocessed\$(TargetFileName)&quot; &quot;-pdb&quot; &quot;-verbose&quot; &quot;-unity-engine=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.CoreModule.dll&quot; &quot;$([System.IO.Path]::GetFullPath('$(IntermediateOutputPath)').TrimEnd('\'))&quot; &quot;-lock=$([System.IO.Path]::Combine('$(ProjectDir)', 'project.lock.json'))&quot; &quot;@D:\WhaleFall\Test\GeneratedProjects\UWP\Assembly-CSharp\SerializationWeaverArgs.txt&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed&quot; &quot;-unity-networking=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Networking.dll&quot;" />
+    <Message Importance="high" Text="SerializationWeaver done." />
+  </Target>
+  <PropertyGroup>
+    <CleanDependsOn>$(CleanDependsOn);CleanSerializationWeaver</CleanDependsOn>
+  </PropertyGroup>
+  <Target Name="CleanSerializationWeaver">
+    <Delete Files="$(TargetDir)Unprocessed\$(TargetFileName)" />
+    <Delete Files="$(TargetDir)Unprocessed\$(TargetName).pdb" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
